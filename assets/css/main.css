@@ -221,9 +221,6 @@ input, select, textarea {
 		font-size: 0.8em;
 		line-height: 1;
 	} 
-	.internlist{
-		align-items: left;
-	}
 
 /* Container */
 
@@ -1787,7 +1784,7 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			width: 100%;
+			width: 90%;
 			margin: 0 0 2em 0;
 		}
 
