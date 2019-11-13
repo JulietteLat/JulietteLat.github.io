@@ -209,12 +209,18 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
-/*Paragraphe*/
+/*Paragraphe_ju*/
 	.smallpara {
 		font-size: 0.8em;
 		line-height: 1.5;
 
 	}
+
+/*liste_ju*/
+	.smallist{
+		font-size: 0.8em;
+		line-height: 1;
+	} 
 
 /* Container */
 
