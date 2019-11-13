@@ -212,7 +212,7 @@ input, select, textarea {
 /*Paragraphe*/
 	.smallpara {
 		font-size: 0.8em;
-		line-height: 1;
+		line-height: 1.5;
 
 	}
 
@@ -2267,6 +2267,11 @@ input, select, textarea {
 
 			#main > section.four {
 				background-color: #e8edec;
+			}
+
+			#main > section.five {
+				background-color: #81918E;
+				background-image: url("../../images/pic02.jpg");
 			}
 
 /* Wide */
