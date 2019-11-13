@@ -1869,7 +1869,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
+			box-shadow: 0 0 2px 1px #000000;
 			background: #fff;
 		}
 
@@ -2247,7 +2247,7 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #000000;
+				background-color: #81918E;
 				background-image: url("../../images/banner.jpg");
 			}
 
