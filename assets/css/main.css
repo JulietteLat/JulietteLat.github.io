@@ -211,7 +211,9 @@ input, select, textarea {
 	}
 /*Paragraphe*/
 	.smallpara {
-		font-size: 0.6em;
+		font-size: 0.8em;
+		line-height: 0.6;
+
 	}
 
 /* Container */
