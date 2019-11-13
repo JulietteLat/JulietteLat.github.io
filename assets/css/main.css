@@ -221,6 +221,9 @@ input, select, textarea {
 		font-size: 0.8em;
 		line-height: 1;
 	} 
+	.internlist{
+		align-items: left;
+	}
 
 /* Container */
 
