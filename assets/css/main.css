@@ -209,6 +209,10 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
+/*Paragraphe*/
+	.smallpara {
+		font-size: 0.6em;
+	}
 
 /* Container */
 
