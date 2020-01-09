@@ -1,0 +1,255 @@
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; };
+
+#map {
+position: absolute;
+left: 25%;
+top: 0;
+bottom: 0;
+width: 75%;
+height: 5%;
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+.list-title{
+display: block;
+position: absolute;
+height:10%;
+width: 10%;
+background: rgba(255, 255, 255, 0.6);
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+border-right: 1px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+	#teams-list-title {
+	left:0;
+	}
+
+	#factories-list-title {
+	display: none;
+	left:10%;
+	}
+
+.button{
+display: block;
+position: absolute;
+height: 5%;
+width: 20%;
+left:85%;
+background: rgba(255, 255, 255, 0.6);
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+	.button:hover {
+	background: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	}
+ 	
+ 	.button h3 {
+ 	padding-top: 0%;
+ 	}
+
+	#button-current {
+	bottom: 95%;
+	}
+
+	#button-algo {
+	bottom: 90%;
+	}
+
+h1 {
+font: 16px/26px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+font-weight: bold;
+text-align: center;	
+}
+
+h2 {
+font: 14px/24px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+text-align: center;	
+margin-top: -0.7%;
+}
+
+h3 {
+vertical-align: top;
+text-align: center;	
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-right: 25%;
+padding-top: 2%;
+}
+
+p{
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+margin-top: -6%;
+text-align: center;
+margin-right: 25%;
+}
+
+#credits{
+position:absolute;
+left:0;
+bottom:0;
+width:10%;
+height:10%;
+}
+
+#credits p{
+margin:10px;
+font: 8px/10px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+text-align: left;
+}
+
+.titlebox {
+position: absolute;
+width: 100%;
+top: 0;
+bottom: 90%;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.info-panel {
+display: block;
+position: absolute;
+top: 10%;
+bottom: 0;
+width: 20%;
+left:85%;
+background: rgba(255, 255, 255, 0.6);
+border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+	.info-panel .info-panel-title{
+	padding-left: 0;
+	}
+
+	.info-panel #team-info {
+	display:none;
+	}
+
+	.info-panel #fact-info {
+	display:none;
+	}
+
+.map-overlay {
+position: absolute;
+width: 10%;
+top: 10%;
+bottom: 0;
+left: 0;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+border-right: 1px solid rgba(0, 0, 0, 0.1);
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+background-color: rgba(255, 255, 255, 0.6);
+max-height: 100%;
+overflow: hidden;
+}
+ 
+	.map-overlay fieldset {
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	border: none;
+	padding: 10px;
+	margin: 0;
+	}
+	 
+	.map-overlay input {
+	display: block;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 0;
+	}
+	 
+	.map-overlay .listing {
+	overflow: auto;
+	max-height: 100%;
+	}
+	 
+	.map-overlay .listing > * {
+	display: block;
+	padding: 5px 10px;
+	margin: 0;
+	}
+	 
+	.map-overlay .listing a {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	color: #404;
+	text-decoration: none;
+	}
+	 
+	.map-overlay .listing a:last-child {
+	border: none;
+	}
+	 
+	.map-overlay .listing a:hover {
+	background: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+	}
+
+.factories-menu {
+display: none;
+position: absolute;
+width: 10%;
+top: 10%;
+bottom: 0;
+left: 10%;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+border-right: 1px solid rgba(0, 0, 0, 0.1);
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+border-left: 1px solid rgba(0, 0, 0, 0.1);
+background-color: rgba(255, 255, 255, 0.6);
+max-height: 100%;
+overflow: hidden;
+}
+
+	.factories-menu fieldset {
+	display: none;
+	background: rgba(0, 0, 0, 0.9);
+	border: none;
+	padding: 10px;
+	margin: 0;
+	}
+	 
+	.factories-menu input {
+	display: block;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 0;
+	}
+	 
+	.factories-menu .listing {
+	overflow: auto;
+	max-height: 100%;
+	}
+	 
+	.factories-menu .listing > * {
+	display: block;
+	padding: 5px 10px;
+	margin: 0;
+	}
+	 
+	.factories-menu .listing a {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	color: #404;
+	text-decoration: none;
+	cursor: pointer;
+	}
+	 
+	.factories-menu .listing a:last-child {
+	border: none;
+	}
+	 
+	.factories-menu .listing a:hover {
+	background: rgba(255, 255, 255, 0.8);
+
+	}
+
+	.factories-menu .listing a:clicked {
+	background: rgba(255, 255, 255, 0.8);
+
+	}
+
