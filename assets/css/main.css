@@ -2258,9 +2258,14 @@ input, select, textarea {
 				background-position: center center;
 			}
 
-			#main > section.one {
+			#main > section.onemain {
 				background-color: #81918E;
 				background-image: url("../../images/banner.jpg");
+			}
+
+			#main > section.oneportfolio {
+				background-color: #81918E;
+				background-image: url("../../images/banner2.jpg");
 			}
 
 			#main > section.two {
