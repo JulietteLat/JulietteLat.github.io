@@ -220,6 +220,10 @@ input, select, textarea {
 	.smallist{
 		font-size: 0.8em;
 		line-height: 1;
+		border-top-style: solid;
+		border-bottom-style: solid;
+		border-width: 1.5px;
+		border-color: rgba(0, 0, 0, 0.15);
 	} 
 
 /* Container */
@@ -1782,6 +1786,13 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.fit.icon {
+			width:22px;
+			display: inline-block;
+			margin-left: 5px;
+			margin-bottom: -5px;
+		}
+
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -1829,6 +1840,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		width: 20px;
 	}
 
 		ul.icons li {
@@ -2181,7 +2193,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #7EAEAC;
 					}
 
 /* Footer */
