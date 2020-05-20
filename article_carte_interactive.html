@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>jl carte interactive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Juliette Latorre</h1>
+							<p>Etudiante Ingénieure UTC en<br />Génie des Stystèmes Urbains</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="index.html#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="index.html#about" id="about-link"><span class="icon solid fa-user">A propos</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+	<!-- Titre -->
+
+
+<!-- Projet Zhongshan Water -->
+						<section id="zhongshan" class="three">
+							<div class="container">
+								<header>
+									<h3>Carte interactive des stations de pompage de Zhongshan Water</h3><!-- Interactive map of Zhongshan pumping stations</h3> -->
+								</header>
+
+								<a href="#" class="image featured"><img src="images/pic04.1.jpg" alt="" /></a>
+								<h4>Contexte du projet</h4>
+								<p>Lors de ma césure en Chine, j'ai eu la chance de participer à un projet pour une entreprise Française implantée à Shanghai. Il s'agissait d'étudier les affectation des équipes de maintenance sur des stations de pompage du réseau hydraulique urbain de la ville de Zhongshan, et d'optimiser ces affectations à l'aide d'un algorithme. Je ne m'étendrai pas sur les détails des difficultés rencontrées et sur les exigences de l'algorithmes en question, car le présent article traite de la carte interactive permettant de visualiser les résultats de l'algorithme, un délivrable important du projet, et ma principale contribution.<br/>
+								La carte a deux objectifs : être capable de visualiser dans l'espace les affectations actuelles des équipes, et les affectations de l'algorithme développé pour vérifier et analyser nos propres résultats, mais également proposer un moyen efficace de présenter ces résultats à un client, et avec eux une preuve de concept.</p>
+								<h4>Code</h4>
+								<p>La carte est structurée comme une page web (js, html et css) et elle utilise la librairie Mapbox GL. Le fond de carte a également été créé sur Mapbox.com. Les données géographiques se trouvent dans un fichier .json incorporé dans le code, et constuit à partir de la base de donnée privée de l'entreprise. L'ensemble du code peut être trouvé sur ma page Github dans le repository SIVECO.</p>
+								<h4>Interface</h4>
+								<p>70 points situés aux emplacements des stations de pompage sont visibles sur la carte. Tous les points de la même couleur sont visités par la même équipe. Le point blanc représente la base d'où toutes les équipes partent et où toutes les équipes reviennent.<br/>
+								Le panneau de gauche donne accès à la liste des équipes (<i>Teams</i>) et des stations de pompage (<i>Factories</i>). Les éléments des listes peuvent être séléctionnés. Ils sont alors les seuls à apparaitre sur la carte.<br/> Les deux boutons en haut à droite permettent de passer des affectations courantes aux affectations de l'algorithme. Après avoir cliqué sur un bouton, il faut cliquer sur la carte une fois pour l'actualiser. Le reste du panneau de droite affiche les caractéristiques propres aux équipes ou stations sélectionnées.</p>
+								
+								
+
+
+								<!--The visualization is an important part of the deliverables. It has two purposes. The first one is to be able to visualize the algorithm results and give a interpretation easy to transmit. While showing explicit results, it should also be a good selling tool.
+								        a. Map interface
+								The map has a simple style with Siveco’s colors, blue and grey. 70 dots are visible on the map. They represent the 69 factories of the dataset, plus the origin of the patrol, where all teams leave each morning and go back in the evening.
+
+								The left panel is dedicated to the teams list and the factories list. The right panel is the information panel, that shows information on the selected teams and factories. Two buttons on the top of the right panel allows to select the dataset to explore. “Current postings” links the map to the dataset with current empirical factories assigned to teams by ZW’s employees. “Optimized postings” links the map to the dataset with the new assignments and teams given in the output of the algorithm.
+								When the map is open, the “current postings” is its default position. In order to print the teams list and the general information, the map must be clicked once. Else, the user can choose to click one of the two top-right buttons. When a button is clicked, the map must still be clicked once to display all available information. The next screenshots show what happens in both cases.
+
+								 
+									Now that the dataset is selected and linked to the display panels, it is possible to select teams and factories to get specific information about them. Teams and factories can be selected by two ways. The first is to click a dot on the map. When a dot is clicked, all dots become grey except the clicked dot that becomes white, and all the other factories that are visited by the same team as the selected factory stays colorful. The second way to select elements is to click on a team in the Team list. Doing that, all the factories on the map will become grey except the factories visited by the team. The team information will appear in the information panel, and the Factory list will appear. This list only contains the factories assigned to the selected team. A factory can be clicked in this list. As a result, the factory is highlighted in white on the map and its information now in the information panel. Clicking a factory directly on the map is interesting since it allows to visualize factories that are visited by more than one team, which is not possible with the Team list. Whereas the Team list allows to check a team’s assignments, which could be useful for technicians for example.
+
+								        b. Map code
+								The source code of the map is available in the repository “Siveco” on JulietteLat github page. Three files are required to display the map: the js file, the css and the html file. An internet access is mandatory to load the map base provided by Mapbox. The two databases are directly written in the js file as two geojson files. Geojson files can be very easily made from csv files using an online converter as this one: http://convertcsv.com/csv-to-geojson.htm, whereas csv files can simply be made by saving an excel table as csv file.
+								The structure of the js code is as follows:
+
+								The map is coded so that any geojson file with the following properties can be read:
+								    • nid (the factory nid in the database)
+								    • team_nid (the factory nid in the database)
+								    • team_indice (a simpler index given to each team)
+								    • work_capacity (the amount of seconds a team must spend in a factory each week to complete all its assignez work orders)
+								    • address (the chines address of the team)
+								We could highlight the fact that only the nid and the team_indice properties are useful in the code functions. The other properties are only used to be displayed in the Information panel.
+								Some interesting functions to implement would be the possibility to display two Information panels side to side to compare two databases for example.
+								Even dough the purpose of this project is to diminish the number of teams required, it could be useful to add colors if more factories are to be added to the databases. The website I want Hue is a good one to provide harmonious categorical colors sets. It has been used here to get the table of team’s attributed colors.
+
+								        c. Interpretation
+								The visualization allowed us to highlight some issues and to understand how optimized our algorithm is. The Current postings database has 6 teams, whereas the Optimized database needs 8 teams to complete all the workorders. At first sight, we would think that the algorithm is not optimized enough. But in the meantime, the total workload of both data sets is not the same. The output of the algorithm gives 1,3 times more teams, but those teams complete 1,5 times more work. So, does this mean that after all, our algorithm is better than the empirical assignment of the factories by ZW’s employees?
+								Not really. 13 factories are unassigned in the Current postings data set. In the reality, it means that we just did not have the data. We do not know who visits these factories. One of our 6 teams, or another team we have no data on? But this does not explain the lack of working load in the Current postings database, because the total work load we calculated is the work to do, and not the attributed working load, which means that it takes in account the working load in the unassigned factories.
+								The Current postings working load is calculated based on the historic of the maintenances, whereas the Optimized posting working load is calculated based on the work orders the teams are supposed to do. Or ZW did not do all its maintenances operations, or it did not record them all. Once again, we cannot conclude anything on our algorithm efficiency.
+								What we can say anyway is that for what we see, all the teams except the first team are currently underloaded, which confirms that the assignments can be improved. On top of that, ZW’s employees never share a factory’s maintenance operations between two teams, which is one of the reasons they might need more teams than necessary. If our algorithm doesn’t give compelling results for now, it allows to share a factory between teams… it just needs to test more optimization strategies!
+								</p> -->
+
+								<footer>
+								<a href="./zw_interactive_map/index.html" class="button scrolly">Open the map (en)</a>
+								</footer>
+							</div>
+						</section>
+
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Envie de découvrir autre chose?</h2>
+							</header>
+
+							<p></p>
+							
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="./article_FID.html" class="image fit"><img src="images/pic01.jpg" alt="Equipe du FID 2019" Title="Equipe du FID 2019"/>
+										<header>
+											<h3> Analyse de Valeur : le Forum de l'Ingénierie Durable <img class="image fit icon" src="images/picto_etudes_light.png" height=22 width=22/></h3> 
+										</header>
+									</article>
+									<article class="item">
+										<a href="./article_projet_GOUTTE.html" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>Urbanisme Durable : le projet GOUTTE <img class="image fit icon" src="images/picto_etudes_light.png" height=22 width=22/></h3>
+										</header>
+									</article>
+
+
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="./article_analyse_urbaine.html" class="image fit"><img src="images/pic05.jpg" alt="Avenue Poincarré, Compiègne - 2018" Title="Avenue Poincarré, Compiègne - 2018"/></a>
+										<header>
+											<h3>Analyse Urbaine sur un parcours de l'ARC <img class="image fit icon" src="images/picto_etudes_light.png" height=22 width=22/></h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="./article_memoire_chine.html" class="image fit"><img src="images/pic03.jpg" alt="Parc naturel de Jiuzhaigou, Sichuan, Chine - 2020" Title="Parc naturel de Jiuzhaigou, Sichuan, Chine - 2020"/></a>
+										<header>
+											<h3>Essai sur l'approche de l'écologie en Chine <img class="image fit icon" src="images/picto_perso_light.png" height=22 width=22/></h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="./article_PV_sous_ombrage.html" class="image fit"><img src="images/pic06.png" alt="" /></a>
+										<header>
+											<h3>Etude des effets de l'ombrage partiel sur une installation PV domestique <img class="image fit icon" src="images/picto_etudes_light.png" height=22 width=22/></h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="./article_reno_thermique.html" class="image fit"><img src="images/pic07.png" alt="" /></a>
+										<header>
+											<h3>Etude sur la rénovation thermique d'un quartier résidentiel de Compiègne <img class="image fit icon" src="images/picto_etudes_light.png" height=22 width=22/></h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>N'hésitez pas à m'écrire!</p>
+
+							<form method="POST" name="contact" data-netlify="true">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" required /></div>
+									<div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" required /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message" required></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
