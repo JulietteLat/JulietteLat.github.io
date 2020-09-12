@@ -8,7 +8,8 @@ $(function () {
     makeImagesResponsive();
 });
 function highlightCurrentPage() {
-  $("a[href='" + location.href + "']").parent().addClass("active");
+  $("ul.sidebar-menu").children().removeClass('active');
+  $("a[href='" + location.pathname + location.hash + "']").parent().addClass("active");
 }
 function makeImagesResponsive() {
     $("img").addClass("img-responsive");
@@ -83,7 +84,14 @@ function utils() {
         var full_url = this.href;
         var parts = full_url.split("#");
         var trgt = parts[1];
-        $('body').scrollTo($('#' + trgt), 800, {offset: -80});
+        $('body').scrollTo($('#' + trgt), 800, {onAfter: function () {
+            if (history.pushState) {
+                history.pushState(null, null, '#' + trgt);
+            } else {
+                location.hash = '#' + trgt;
+            }
+            highlightCurrentPage();
+        }, offset: -30});
     });
 }
 /* product detail gallery */

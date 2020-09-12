@@ -1,3 +1,55 @@
 {{ define "main" }}
-  {{ partial "portfolio.html" . }}
+
+<content class="col-sm-8 col-md-9 white-background" id="index">
+  <div class="welcome">
+    {{ partial "mobile_nav_toggle.html" . }}
+    <h2>Bienvenue</h2>
+
+    <p>
+      Ici, vous pourrez en apprendre plus sur moi, et peut-être aussi sur l'écologie, la science, l'urbanisme, la Chine, la peinture, et tout un tas d'autres sujets et causes qui m'auraient donné envie de travailler dessus.
+Mettez vous bien, (un chocolat chaud étant un bon moyen de se mettre bien) et bonne lecture! 
+    </p>
+
+    <div style="height: 4rem;"></div>
+
+    <a class="scroll-to big-button" href="#portfolio">Découvrir !</a>
+
+    <div style="height: 6rem;"></div>
+  </div>
+
+  <div>
+    <h2 id="portfolio">My portfolio</h2>
+    {{ partial "portfolio.html" . }}
+  </div>
+
+  <div class="">
+    <div class="">
+     <h4 id="contact">You can find me also on:</h4>
+     {{ partial "social_buttons_in_contact.html" . }}
+     <h4>Drop me a line, maybe?</h4>
+     <form name="contact" id="contact-form" class="contact-form form" method="POST" data-netlify="true">
+       <div class="controls">
+         <div class="form-group">
+           <label for="name">Your name *</label>
+           <input type="text" name="name" id="name" required="required" class="form-control">
+         </div>
+         <div class="form-group">
+           <label for="email">Your email *</label>
+           <input type="email" name="email" id="email" required="required" class="form-control">
+         </div>
+         <div class="form-group">
+           <label for="message">Your message for me *</label>
+           <textarea rows="4" name="message" id="message" required="required" class="form-control"></textarea>
+         </div>
+         <div>
+           <input type="submit" value="Send" class="btn btn-ghost">
+         </div>
+       </div>
+     </form>
+    </div>
+  </div>
+
+</content>
+
+
 {{ end }}

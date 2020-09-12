@@ -6,7 +6,7 @@
     {{ end }}
     <ul class="sidebar-menu">
       {{ range .Site.Params.navlinks }}
-        <li><a href="{{ absURL .url }}">{{ .name }}</a></li>
+        <li><a {{ if .anchor }}class="scroll-to"{{ end }} href="{{ .url }}">{{ .name }}</a></li>
       {{ end }}
     </ul>
     {{ partial "social_buttons_in_sidebar.html" . }}

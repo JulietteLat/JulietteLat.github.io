@@ -1,17 +1,17 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Juliette Latorre"
 theme = "creative-portfolio"
 
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
-  style = "default"
+  style = "sea"
   description = "Describe your website"
-  copyright = "&copy;2016 Your name or company"
+  copyright = "&copy;2020 Juliette Latorre"
   sidebarAbout = [
-    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
+    "Hello",
     "Originally from Toronto, currently based in London."
   ]
   # Contact page
@@ -45,24 +45,20 @@ theme = "creative-portfolio"
 
   [[params.navlinks]]
   name = "Portfolio"
-  url = "#portfolio"
+  url = "/#portfolio"
+  anchor = true
 
   [[params.navlinks]]
   name = "About"
-  url = "about/"
+  url = "/about/"
 
   [[params.navlinks]]
   name = "Get in touch"
-  url = "contact/"
+  url = "/#contact"
+  anchor = true
 
   [params.social]
   facebook      = "full page or profile url in facebook"
-  googleplus    = "full profile url in googleplus"
   email         = "email@example.com"
-  twitter       = "full profile url in twitter"
   linkedin      = "full profile url in linkedin"
-  stackoverflow = "full profile url in stackoverflow"
-  instagram     = "full profile url in instagram"
   github        = "full profile url in github"
-  youtube       = "full profile url in youtube"
-  whatsapp      = "wa.me service link"
