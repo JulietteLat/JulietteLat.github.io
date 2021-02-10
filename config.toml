@@ -1,0 +1,65 @@
+baseURL = "https://juliette-latorre.netlify.app/"
+languageCode = "en-us"
+title = "Juliette Latorre"
+theme = "creative-portfolio"
+
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "red"
+  description = "Ceci est mon site personnel. Vous y trouverez des présentations de projets et des articles de moi!"
+  copyright = "&copy;2020 Juliette Latorre"
+  sidebarAbout = [
+    "Etudiante ingénieure en Génie Urbain à l'Université de Technologie de Compiègne.",
+    "Originaire de Montpellier, actuellement à Compiègne."
+  ]
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+  email = "juliette.latorre@etu.utc.fr"
+
+    # Optional Matomo analytics (formerly piwik)
+      # [params.analytics.matomo]
+      #  URL = "https://stats.example.com"
+      #  ID = "42"
+      #  # Track all subdomains with "*.example.com" (Optional)
+      #  domain = "www.example.com"
+      #  # Optional integrity check hash
+      #  hash = ""
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Accueil"
+  url = "/"
+  home = true
+
+  [[params.navlinks]]
+  name = "Portfolio"
+  url = "/#portfolio"
+  anchor = true
+
+  [[params.navlinks]]
+  name = "À propos"
+  url = "/#about"
+  anchor = true
+
+  [[params.navlinks]]
+  name = "Contact"
+  url = "/#contact"
+  anchor = true
+
+  [params.social]
+  facebook      = "https://www.facebook.com/profile.php?id=100004592028824"
+  email         = "juliette.latorre@etu.utc.fr"
+  linkedin      = "https://www.linkedin.com/in/juliette-latorre-838489192/"
+  github        = "https://github.com/JulietteLat"

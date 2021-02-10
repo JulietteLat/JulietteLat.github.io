@@ -1,0 +1,115 @@
+/* your styles go here */
+
+#index h2 {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+#index .small-navbar {
+  padding: 0 2rem;
+}
+
+#index .welcome-section {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: 50% 65%;
+  text-align: center;
+  padding: 2rem 2rem;
+  color: black;
+  font-size: 2rem;
+}
+
+#index #portfolio {
+  padding-right : 2rem;
+  padding-left: 2rem;
+  background-color: #EBEBEB;
+  box-shadow: inset 0 0 5px #ccc;
+}
+
+#index .about-section {
+  background-image: url("../images/banner2.jpg");
+  background-size: cover;
+  background-position: 50% 55%;
+  text-align: center;
+  padding: 2rem 0rem 6rem;
+  color: #f4f4f4;
+  font-size: 1.4rem;
+}
+
+#index .background {
+  background-color: #EBEBEB;
+  box-shadow: inset 0 0 5px #ccc;
+  padding-top: 2rem;
+}
+
+#index #about-text {
+  background-color: white;
+  box-shadow: 0 0 5px #ccc;
+  margin : 0rem 2rem;
+}
+
+#index .contact-section {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+#index .welcome-section h2 {
+  padding: 6rem 0rem 0rem 0rem; 
+}
+
+#index .welcome-section p {
+  padding: 4rem 6rem 20rem 6rem;
+}
+
+#index .about-section h2 {
+  padding-bottom: 26rem;
+}
+
+#index p {
+  padding : 4rem 2rem;
+  text-align: center;
+}
+
+
+
+
+ @media (min-width: 768px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+  }
+  content {
+    position : absolute;
+    left:33.33333% ;
+    box-shadow: inset 0 0 5px #ccc;
+  }
+}
+
+@media (min-width: 992px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+  }
+  content {
+    position : absolute;
+    left:25% ;
+  }
+}
+
+
+#index {
+  padding: 0;
+}
+
+.big-button {
+  padding: 1rem;
+  color: #FF765D;
+  border: 1px solid;
+  border-color: #FF765D;
+  font-size: 2rem;
+}
+
+.big-button:hover {
+  text-decoration: none;
+  color: #f4f4f4;  
+  background-color: #FF765D;
+}
