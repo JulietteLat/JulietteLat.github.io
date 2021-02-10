@@ -1,6 +1,6 @@
 +++
 title = "Modélisation BIM : la villa Paziol"
-draft = true
+draft = false
 image = "/portfolio/modelisation_bim_paziol/terrasse.jpg"
 showonlyimage = false
 Description = "Un projet de modélisation BIM d'une villa privée du Languedoc Rousillon : la Villa Paziol, par Archionline. Pour ce projet, tous les documents du permis de construire ont été reproduits sur le logiciel Autocad. Plans d'étages, vues de façades, plans masse et de situation... Puis une modélisation 3D réaliste de la villa a été réalisée en collaboration BIM sur le logiciel Revit."

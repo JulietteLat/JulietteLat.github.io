@@ -1,6 +1,6 @@
 +++
 title = "Géomatique : étude du risque lié aux épisodes cévenols dans l'Hérault"
-draft = true
+draft = false
 image = "/portfolio/etude_risque_nat_herault/crue_2019.jpg"
 showonlyimage = false
 Description = "Une analyse territoriale de la sensibilité de l'Hérault face aux épisodes Cévenols. Une analyse géomatique croisée des zones aux populations vulnérables et de l'exposition à trois types de dangers liés aux épisodes pluvieux violents : les inondations par débordement de plans d'eau existants, les inondations en amont des bassins versants par ruissellement, et les torrents formés par les eaux ruisselantes. "

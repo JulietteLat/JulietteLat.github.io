@@ -1,6 +1,6 @@
 +++
 title = "Analyse urbaine : l'Avenue Poincarré, Compiègne"
-draft = true
+draft = false
 image = "/portfolio/analyse_urbaine_compiègne/pic05.jpg"
 showonlyimage = false
 Description = "Une analyse d'un parcours urbain de l'Agglomération de la Région de Compiègne, mobilisant de nombreux outils d'analyse paysagère et urbaine."

@@ -1,6 +1,6 @@
 +++
 title = "Etude : effets de l'ombrage partiel sur les installations PV domestiques"
-draft = true
+draft = false
 image = "/portfolio/pv_sous_ombrage/pic_pv_innov.jpg"
 showonlyimage = false
 Description = "Un projet d'études de modélisation d'une installation photovoltaïque de petite taille soumise à des conditions d'ombrage partiel, et de suivi de sa perte de puissance produite."

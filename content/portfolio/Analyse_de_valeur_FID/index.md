@@ -1,6 +1,6 @@
 +++
 title = "Analyse de valeur : Le Forum de l'Ingénierie Durable"
-draft = true
+draft = false
 image = "/portfolio/analyse_de_valeur_fid/photoFID.jpg"
 showonlyimage = false
 Description = "Le Forum de l'Ingénierie Durable (FID) est une association étudiante de l'UTC qui organise chaque année l'événement éponyme. La première édition de ce forum mettant en relation des étudiants avec des entreprises engagées, a eu lieu en mars 2019, et a fait l'objet de retours très contrastés."

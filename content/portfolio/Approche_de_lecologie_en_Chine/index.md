@@ -1,6 +1,6 @@
 +++
 title = "Mémoire : approche de l'écologie en Chine"
-draft = true
+draft = false
 image = "/portfolio/approche_de_lecologie_en_chine/pic03.jpg"
 showonlyimage = false
 Description = "Ayant eu la chance d'étudier six mois à l'Université de Shanghai, j'ai profité de cette epérience pour me plonger dans l'approche de l'écologie en Chine. Le résultat des mes recherches et de mes réflexions est développé dans un mémoire rédigé tout du long du semestre, intitulé : Approche de l’écologie dans la Chine d’aujourd’hui, quel rôle et quel potentiel de ce pays pour notre avenir commun ?"

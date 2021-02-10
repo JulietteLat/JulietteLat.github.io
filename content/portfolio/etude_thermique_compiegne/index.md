@@ -1,6 +1,6 @@
 +++
 title = "Etude : rénovation énergétique d'un quartier résidentiel de Compiègne"
-draft = true
+draft = false
 image = "/portfolio/etude_thermique_compiegne/pic07.png"
 showonlyimage = false
 Description = "Un projet d'études de modélisation thermique sur le logiciel Pléiades en vue d'établir différents scénarios de rénovation énergétique."
