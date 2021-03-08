@@ -55,7 +55,7 @@ section.background-secondary {
   font-family: "Georgia", "Times New Roman", Times, serif;
 }
 .img-responsive {
-  width : 10%;
+  width : 100%;
 }
 .no-space .box {
   margin: 0 -15px;
