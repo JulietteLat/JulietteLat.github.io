@@ -15,7 +15,9 @@ Dans le cadre d'un cours de modélisation technique du bâtiment, nous devions c
 
 #### Modélisation
 
-Le but de ce projet est, dans un premier temps, de produire les divers documents graphiques constituant un permis de construire. Ces documents sont réalisés sur le logiciel Autocad, à l'exception de la charte graphique. Ceux marqués d'une * sont disponibles en téléchargement en bas de page, ce sont :
+Le but de ce projet est, dans un premier temps, de produire les divers documents graphiques constituant un permis de construire. Ces documents sont réalisés sur le logiciel Autocad, à l'exception de la charte graphique. Ceux marqués d'une * sont disponibles en téléchargement en bas de page.
+
+
 - le plan masse
 - le plan de situation
 - les plans d'étages*
@@ -35,10 +37,11 @@ Ainsi, nous produisons une maquette réaliste à partir de laquelle nous obtenon
 
 #### Documents
 
-Une partie des documents produits est disponible au format pdf ci-dessous :
--  [Plan rez-de-chaussée](/portfolio/modelisation_bim_paziol/201203_VP_PC_RDC.pdf) 
--  [Plan étage](/portfolio/modelisation_bim_paziol/201203_VP_PC_Etage.pdf)
--  [Coupe A-A](/portfolio/modelisation_bim_paziol/201203_VP_PC_COUPE_AA.pdf)
+Une partie des documents produits est disponible au format pdf ci-dessous.
+
+- [Plan rez-de-chaussée](/portfolio/modelisation_bim_paziol/201203_VP_PC_RDC.pdf) 
+- [Plan étage](/portfolio/modelisation_bim_paziol/201203_VP_PC_Etage.pdf)
+- [Coupe A-A](/portfolio/modelisation_bim_paziol/201203_VP_PC_COUPE_AA.pdf)
 - [Coupe B-B](/portfolio/modelisation_bim_paziol/201203_VP_PC_COUPE_BB.pdf)
 - [Vues de face Nord et Est](/portfolio/modelisation_bim_paziol/201203_VP_PC_FACES_NetE.pdf) 
 - [Vues de face Sud et Ouest](/portfolio/modelisation_bim_paziol/201203_VP_PC_FACES_SetO.pdf) 
