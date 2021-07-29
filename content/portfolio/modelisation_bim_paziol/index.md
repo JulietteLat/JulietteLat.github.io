@@ -36,9 +36,9 @@ Ainsi, nous produisons une maquette réaliste à partir de laquelle nous obtenon
 #### Documents
 
 Une partie des documents produits est disponible au format pdf ci-dessous :
-- [Plan rez-de-chaussée](/portfolio/modelisation_bim_paziol/201203_VP_PC_RDC.pdf) 
-- [Plan étage](/portfolio/modelisation_bim_paziol/201203_VP_PC_Etage.pdf)
-- [Coupe A-A](/portfolio/modelisation_bim_paziol/201203_VP_PC_COUPE_AA.pdf)
+-  [Plan rez-de-chaussée](/portfolio/modelisation_bim_paziol/201203_VP_PC_RDC.pdf) 
+-  [Plan étage](/portfolio/modelisation_bim_paziol/201203_VP_PC_Etage.pdf)
+-  [Coupe A-A](/portfolio/modelisation_bim_paziol/201203_VP_PC_COUPE_AA.pdf)
 - [Coupe B-B](/portfolio/modelisation_bim_paziol/201203_VP_PC_COUPE_BB.pdf)
 - [Vues de face Nord et Est](/portfolio/modelisation_bim_paziol/201203_VP_PC_FACES_NetE.pdf) 
 - [Vues de face Sud et Ouest](/portfolio/modelisation_bim_paziol/201203_VP_PC_FACES_SetO.pdf) 

@@ -1,5 +1,5 @@
 +++
-title = "Analyse SIG : flux humains à Santiago du Chili"
+title = "Analyse SIG : transports urbains à Santiago du Chili"
 draft = false
 image = "/portfolio/santiago_flux/santiago.jpg"
 showonlyimage = false
@@ -37,6 +37,8 @@ Le diagnostic de la demande est fait de manière théorique, en calculant diffé
 Ainsi, nous déterminons 4 types de flux : les flux universitaires, les flux de santé, les flux pendulaires liés à l'activité professionnelle, et les flux dits "d'activité", qui englobent des activités non professionnelles jugées nécessaires ou très ancrées culturellement (Achats alimentaires en marché et supermarché, achats autres en centre commercial et pratiques religieuses).
 
 {{<bouton article="/portfolio/santiago_flux/Diagnostic_de_la_demande.pdf">}}Téléchargement Méthodologie demande (fr){{</bouton>}}
+
+
  
 
 #### Projet d'amélioration : nouvelle ligne de métro

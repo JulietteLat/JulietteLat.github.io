@@ -79,7 +79,10 @@ function utils() {
         window.open($(this).attr("href"));
     });
     /* animated scrolling */
+    console.log("hola me liamo paulo")
     $('.scroll-to').click(function (event) {
+        if (document.location.pathname !== "/")
+            return;
         event.preventDefault();
         var full_url = this.href;
         var parts = full_url.split("#");
